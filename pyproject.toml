@@ -17,6 +17,9 @@ tox = "^3.24.5"
 isort = "^5.10.1"
 mkdocs-material = "^8.2.1"
 mike = "^1.1.2"
+mkdocs-git-revision-date-plugin = "^0.3.1"
+# TODO: make it work with already ready mateiral configuration
+AutoMacDoc = "^0.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
