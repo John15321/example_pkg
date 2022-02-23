@@ -6,6 +6,7 @@ authors = ["John15321 <janbronicki@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+Sphinx = "^4.4.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -17,10 +18,15 @@ tox = "^3.24.5"
 isort = "^5.10.1"
 mkdocs-material = "^8.2.1"
 mike = "^1.1.2"
-mkdocs-git-revision-date-plugin = "^0.3.1"
+# mkdocs-git-revision-date-plugin = "^0.3.1"
 # TODO: make it work with already ready mateiral configuration
 AutoMacDoc = "^0.3"
 
+
+# sphinx-quickstart docs
+# sphinx-quickstart docs --sep --project example_pkg -v 0.1.0 -r 0.1.0 -l en --ext-autodoc --ext-doctest --ext-coverage --ext-githubpages --makefile --batchfile --author "Jan Bronicki <janbronicki@gmail.com>"
+sphinx-rtd-theme = "^1.0.0"
+# sphinx-build -b html docs/source/ docs/build/html
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

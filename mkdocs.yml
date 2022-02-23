@@ -1,7 +1,6 @@
 site_name: My Docs
 nav:
   - Home: "README.md"
-  - About: "about.md"
 repo_url: https://github.com/John15321/example_pkg
 edit_uri: edit/master/docs/
 
