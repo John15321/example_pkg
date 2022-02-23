@@ -10,12 +10,7 @@ Welcome to example_pkg's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
-.. autosummary::
-   :toctree: generated
-
-   example_pkg
-
+   modules
 
 Indices and tables
 ==================
