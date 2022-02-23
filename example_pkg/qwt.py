@@ -1,6 +1,3 @@
-from re import A
-
-
 def aaa(asd: str) -> str:
     """_summary_
 
@@ -14,4 +11,4 @@ def aaa(asd: str) -> str:
     str
         _description_
     """
-    return aaa+ "gre"
+    return aaa + "gre"
