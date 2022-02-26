@@ -65,6 +65,7 @@ exclude_patterns = []
 #
 # Use the Read the docs theme
 html_theme = "sphinx_rtd_theme"
+# Material theme options (see theme.conf for more information)
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

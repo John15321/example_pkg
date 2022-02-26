@@ -14,19 +14,22 @@ python = ">=3.7, <3.10"
 
 # sphinx-quickstart docs
 # sphinx-quickstart docs --sep --project example_pkg -v 0.1.0 -r 0.1.0 -l en --ext-autodoc --ext-doctest --ext-coverage --ext-githubpages --makefile --batchfile --author "Jan Bronicki <janbronicki@gmail.com>"
-# sphinx-rtd-theme = "^1.0.0"
-# Sphinx = "^4.4.0"
-# pytest = "^7.0.1"
-pytest = "*"
-flake8 = ">=4.0.0"
-pylint = "*"
-black = "*"
-tox = "*"
-isort = "*"
-Sphinx = ">=4.3.0"
-sphinx-rtd-theme = "*"
+
+Sphinx = "*"
+sphinx-rtd-theme = "^1.0.0"
+isort = "^5.10.1"
+tox = "^3.24.5"
+black = "^22.1.0"
+pylint = "^2.12.2"
+flake8 = "*"
+# later either choose one or make it chooseable
+sphinx-material = "^0.0.35"
+pytest = "^7.0.1"
 
 # sphinx-build -b html docs/source/ docs/build/html
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+# Good install command
+# poetry add --dev sphinx="*" sphinx-rtd-theme isort tox black pylint flake8="*" pytest

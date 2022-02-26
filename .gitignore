@@ -160,3 +160,6 @@ cython_debug/
 .vscode/
 
 .DS_Store
+
+docs/build/
+docs/source/_build/
