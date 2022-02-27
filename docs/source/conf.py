@@ -13,19 +13,33 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import os
+from pathlib import Path
 
+import toml
+
+current_directory = Path(os.path.dirname(__file__))
+print(f"dir name: {current_directory}")
+# TODO: add if else for that  root_project_directory = "../"
+root_project_directory = "../../"
+
+pyproject_file: Path = root_project_directory + "pyproject.toml"
+
+pyproject_version = toml.load(pyproject_file)["tool"]["poetry"]["version"]
+pyproject_authors = toml.load(pyproject_file)["tool"]["poetry"]["authors"]
 
 # -- Project information -----------------------------------------------------
 
 project = "example_pkg"
-copyright = "2022, Jan Bronicki <janbronicki@gmail.com>"
-author = "Jan Bronicki <janbronicki@gmail.com>"
+# TODO: Template that in the cookiecutter tempalte
+copyright = f"2022, {pyproject_authors}"
+author = pyproject_authors
 
 # The short X.Y version
-version = "0.1.0"
+version = pyproject_version
 
 # The full version, including alpha/beta/rc tags
-release = "0.1.0"
+release = pyproject_version
 
 
 # -- General configuration ---------------------------------------------------

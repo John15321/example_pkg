@@ -22,8 +22,7 @@ tox = "^3.24.5"
 black = "^22.1.0"
 pylint = "^2.12.2"
 flake8 = "*"
-# later either choose one or make it chooseable
-sphinx-material = "^0.0.35"
+toml = "^0.10.2"
 pytest = "^7.0.1"
 
 # sphinx-build -b html docs/source/ docs/build/html
