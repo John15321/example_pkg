@@ -26,7 +26,7 @@ root_project_directory = "../../"
 pyproject_file: Path = root_project_directory + "pyproject.toml"
 
 pyproject_version = toml.load(pyproject_file)["tool"]["poetry"]["version"]
-pyproject_authors = toml.load(pyproject_file)["tool"]["poetry"]["authors"]
+pyproject_authors = str(toml.load(pyproject_file)["tool"]["poetry"]["authors"][0])
 
 # -- Project information -----------------------------------------------------
 
