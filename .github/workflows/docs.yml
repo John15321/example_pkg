@@ -9,12 +9,12 @@ jobs:
     steps:
     - name: Check out repository code
       uses: actions/checkout@v2
-    - name: Setup Python
+    - name: Setup Python  ${{ matrix.python-version }}
       uses: actions/setup-python@v2.3.2
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Setup tox
+    - name: Setup tox for python ${{ matrix.python-version }}
+      run: pip install tox
+    - name: Run tox docs on python ${{ matrix.python-version }}
       run: |
-        pip install tox
-    - name: Run tox docs
-      run: tox -e docs
+        tox -e docs
