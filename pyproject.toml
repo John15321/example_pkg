@@ -9,10 +9,7 @@ authors = ["John15321 <janbronicki@gmail.com>"]
 python = ">=3.7, <3.10"
 
 [tool.poetry.dev-dependencies]
-# TODO: make it work with already ready mateiral configuration
 
-
-# sphinx-quickstart docs
 # sphinx-quickstart docs --sep --project example_pkg -v 0.1.0 -r 0.1.0 -l en --ext-autodoc --ext-doctest --ext-coverage --ext-githubpages --makefile --batchfile --author "Jan Bronicki <janbronicki@gmail.com>"
 
 Sphinx = "*"
