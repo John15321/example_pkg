@@ -6,7 +6,7 @@ authors = ["John15321 <janbronicki@gmail.com>"]
 
 [tool.poetry.dependencies]
 # TODO: make it work for 3.7.x (sphinx - flake8 fuck up)
-python = ">=3.7, <3.10"
+python = ">=3.7, <=3.10"
 
 [tool.poetry.dev-dependencies]
 
@@ -28,4 +28,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 # Good install command
-# poetry add --dev sphinx="*" sphinx-rtd-theme isort tox black pylint flake8="*" pytest
+# poetry add --dev sphinx="*" sphinx-rtd-theme isort tox black pylint flake8="*" pytest toml
